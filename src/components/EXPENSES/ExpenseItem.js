@@ -8,6 +8,7 @@ const ExpenseItem = (props) => {
 
  const [ title , setTitle ] = useState(props.title);
  console.log('is state render')
+
 const clickHandler =()=>{
    setTitle('vashnavi')
    console.log(title);
@@ -18,7 +19,7 @@ return (
          <ExpenseDate date={props.date} />
       </div>
           <h1>{title}</h1>
-          <span className='mrp_cont'>Rs.{props.amount}</span>
+          <span className='mrp_cont'>₹ {props.amount}</span>
           <button onClick={clickHandler}>click me !</button>
   </Card>
   )

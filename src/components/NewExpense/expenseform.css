@@ -1,0 +1,24 @@
+.form__box{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    
+}
+
+.submit__btn{
+  text-align: center;
+  margin: auto;
+  border:2px solid yellow;
+  background: transparent;
+  padding: 0.5rem;
+  color:yellow;
+}
+
+
+input{
+    background-color: rgb(237, 249, 185);
+    border:none;
+    padding:0.4rem;
+    color:black;
+    border-radius:5px;
+}

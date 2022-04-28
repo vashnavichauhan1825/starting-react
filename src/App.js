@@ -1,8 +1,10 @@
 import ExpenseItem from "./components/EXPENSES/ExpenseItem";
 import "./App.css";
 import NewComp from "./components/EXPENSES/NewComp";
+import NewExpense from "./components/NewExpense/NewExpense";
+import ExpenseForm from "./components/NewExpense/ExpenseForm";
 
-function App() {
+const App=()=> {
   const dataArray =[
     {
       title:'kindle',
@@ -27,8 +29,7 @@ function App() {
   ]
   return (
     <div>
-      <h1>welcome !</h1>
-
+        <NewExpense/>
         <NewComp items={dataArray} />
 
     </div>
