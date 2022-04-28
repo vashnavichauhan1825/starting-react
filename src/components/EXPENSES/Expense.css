@@ -1,0 +1,47 @@
+body{
+    width:100vw;
+    overflow: hidden;
+    background-color:rgb(236, 239, 248);
+    
+}
+
+.expense_cont{
+    display:flex;
+    width:80%;
+    height:auto;
+    color:wheat;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgb(46, 48, 48);
+    border:2px solid rgb(233, 245, 10);
+    margin:5px;
+}
+
+.expense__box{
+margin:1rem;
+width:94%;
+height: auto;
+padding:2rem;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(25, 24, 24);
+gap:1rem;
+}
+
+.mrp_cont{
+    border:2px solid rgb(227, 242, 13);
+    padding:0.5rem;
+    border-radius:10px;
+}
+
+
+.date_cont{
+    border:1px dotted rgb(218, 225, 143);
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
