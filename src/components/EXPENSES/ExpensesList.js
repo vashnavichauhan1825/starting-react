@@ -10,7 +10,7 @@ const ExpensesList = (props) => {
 
    
   return (
-    <div>
+    <div  className='expense__box'>
  {
    props.items.map(item => <ExpenseItem
         title={item.title} amount={item.amount} date={item.date} key={item.id} ></ExpenseItem> )

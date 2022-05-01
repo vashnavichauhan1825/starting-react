@@ -5,7 +5,6 @@ const ExpenseForm = (props) => {
     const [addTitle , setAddTitle] = useState('');
     const [addExpense , setAddExpense]= useState('');
     const [addDate , setAddDate] = useState('');
-    const [btnValue , setBtnValue] =useState(false)
   const textHandler=(event)=>{
     setAddTitle(event.target.value);
   }
@@ -32,17 +31,13 @@ const ExpenseForm = (props) => {
        setAddTitle('');
     }
 
- const addExpenseClickHandler =()=>{
-   setBtnValue(true)
- }
 
- const removeExpenseClickHandler =()=>{
-   setBtnValue(false)
- }
+
+
   return (
     <>
   
-  { btnValue &&  <form className='form__box' onSubmit={submitHandler}>
+    <form className='form__box' onSubmit={submitHandler}>
        <div>
            <label>Title : </label>
            <input type='text' value={addTitle} onChange={textHandler}/>
@@ -62,9 +57,10 @@ const ExpenseForm = (props) => {
            <label>Date : </label>
            <input type='date'  min='2019-11-20' max='2023-12-31' value={addDate}  onChange={dateHandler} />
        </div>
-       <button  className='submit__btn' onClick={removeExpenseClickHandler} type='submit'>Cancel</button>
-   </form> }
-   <button  className='submit__btn' onClick={addExpenseClickHandler} type='submit'>ADD EXPENSE</button>
+       <button  className='submit__btn'  type='submit'>ADD EXPENSE</button>
+       <button  type="button" className='submit__btn' onClick={props.onCancel}>Cancel</button>
+   </form> 
+  
   
    </>
   )
