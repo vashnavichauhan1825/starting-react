@@ -1,0 +1,22 @@
+.expense__filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.1rem;
+}
+
+select{
+    border:none;
+    background-color:yellow;
+    color:black;
+    font-size:1rem;
+}
+option{
+    background-color:yellow;
+    color:black;
+}
+
+option:hover::before{
+    background-color: black;
+    color:yellow;
+}
