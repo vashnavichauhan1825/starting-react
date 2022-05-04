@@ -1,4 +1,5 @@
 import React from 'react'
+import './expenseFilter.css'
 
 const ExpenseFilter = (props) => {
 
@@ -6,7 +7,7 @@ const ExpenseFilter = (props) => {
         props.setYearFilter(event.target.value);
     }
   return (
-    <div>
+    <div className='expense__filter'>
         <h1>filter</h1>
         <select value={props.selectValue} onChange={fiterYearHandler}>
         <option value='2019'>2019</option>
