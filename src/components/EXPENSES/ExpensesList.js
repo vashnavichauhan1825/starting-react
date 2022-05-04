@@ -14,6 +14,7 @@ const ExpensesList = (props) => {
 
   return (
     <div className="expense__box">
+   
       {props.items.map((item) => (
         <ExpenseItem
           title={item.title}
